@@ -26,3 +26,4 @@ def obtener_bromas():
 
 def cerrarconexionbase():
     conn.close()
+#cambios
