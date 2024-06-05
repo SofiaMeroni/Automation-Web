@@ -2,7 +2,7 @@ from src.paginas.api import todaslasbromas
 from src.utils.crearbase import cerrarconexionbase, bromaguardada, obtener_bromas
 
 def main():
-    num_bromas = 20
+    num_bromas = 5
     bromas = todaslasbromas(num_bromas)
 
     # Guardar las bromas en la base de datos
@@ -22,4 +22,4 @@ def main():
 if __name__ == '__main__':
     main()
     cerrarconexionbase() 
-    #cambio
+

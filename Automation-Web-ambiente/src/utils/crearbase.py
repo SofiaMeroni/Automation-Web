@@ -4,10 +4,10 @@ import sqlite3
 conn = sqlite3.connect('basedebromas.db')
 c = conn.cursor()
 
-# Eliminar la tabla existente (si existe)
-c.execute('DROP TABLE IF EXISTS bromas')
+# Eliminar la tabla existente
+#c.execute('DROP TABLE IF EXISTS bromas')
 
-# Crear la tabla con la estructura correcta
+# Crear la tabla
 c.execute('''
     CREATE TABLE IF NOT EXISTS bromas (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -26,4 +26,3 @@ def obtener_bromas():
 
 def cerrarconexionbase():
     conn.close()
-#cambios
